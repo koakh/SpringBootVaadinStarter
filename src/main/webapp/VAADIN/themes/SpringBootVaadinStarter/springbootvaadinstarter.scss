@@ -1,0 +1,17 @@
+@import "../valo/valo.scss";
+
+@mixin springbootvaadinstarter {
+	@include valo;
+
+	/* Add your theme selectors here */
+
+	.v-grid-cell.link-icon-active .v-button-bar button.v-edit span:before {
+		color: green; /* recolor icon */
+		content: "\f044"; /* content-code of FontAwesome that is served by vaadin! */
+	}
+
+	.v-grid-cell.link-icon-action .v-button-bar button.v-edit span:before {
+		color: red; /* recolor icon */
+		content: "\f045"; /* content-code of FontAwesome that is served by vaadin! */
+	}
+}
